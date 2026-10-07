@@ -2,57 +2,5 @@
 # megatouch-host loads the game with RTLD_NOW, so each of these must be defined
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
-FlipBitmapVert | libmerit3d.so
-FileExists(char const*) | libmerit3d.so
-DoRegularProcessing() | libmerit3d.so
-debug_check_address(void*) | libmeritbasegame.so
-Heartbeat_WaitForAll(unsigned long, bool) | libmeritbasegame.so
 NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | libmeritbasegame.so
-TextSystem::GetSpriteChannels(char const*, unsigned char**, unsigned char**, int, int, bool, bool, int, float) | libmerit3d.so
-TextSystem::SetTextDescription(TextDesc const&) | libmerit3d.so
-CoinJamManager::RegisterCallback(void (*)(bool)) | stickerbook.so
-CoinJamManager::UnregisterCallback(void (*)(bool)) | stickerbook.so
-CoinJamManager::Instance() | stickerbook.so
-MyMeritManager::GetGameLevel(xml_gameinfo::GameIds) | libmeritbasegame.so
-MyMeritManager::SetGameLevel(xml_gameinfo::GameIds, int) | libmeritbasegame.so
-MyMeritManager::Instance() | libmeritbasegame.so
-ExtendedCrashInfo::ExtendedCrashInfo() | libmeritbasegame.so
-ExtendedCrashInfo::~ExtendedCrashInfo() | libmeritbasegame.so
-abstract_db_class::GeneralQuery(char const*, int (*)(void*, int, char**, char**), void*) | stickerbook.so
 USBIO::JoystickFound() | libmeritbasegame.so
-Colour::black | libmerit3d.so
-Colour::white | libmerit3d.so
-Locale::LanguageManager::IndexOf(Locale::Languages) | libmerit3d.so
-Locale::LanguageManager::IndexOf(Locale::Languages) | stickerbook.so
-Merit3d::RenderToTexture::UpdateTexture(unsigned char*) | libmerit3d.so
-Merit3d::RenderToTexture::UpdateDeltaTextureFull(unsigned short*, unsigned char*, unsigned short) | libmerit3d.so
-Merit3d::RenderToTexture::UpdateDeltaTextureDirty(unsigned short*, unsigned short) | libmerit3d.so
-Merit3d::RenderToTexture::Create(unsigned int, unsigned int, unsigned int) | libmerit3d.so
-Merit3d::RenderToTexture::Destroy() | libmerit3d.so
-Merit3d::RenderToTexture::RenderToTexture() | libmerit3d.so
-Merit3d::RenderToTexture::~RenderToTexture() | libmerit3d.so
-Merit3d::VideoObjectData::FirstFrame() | libmerit3d.so
-Merit3d::VideoObjectData::isVideoLoaded() | libmerit3d.so
-Merit3d::VideoObjectData::Load(char const*, bool) | libmerit3d.so
-Merit3d::VideoObjectData::Play() | libmerit3d.so
-Merit3d::VideoObjectData::Stop() | libmerit3d.so
-Merit3d::VideoObjectData::Pause() | libmerit3d.so
-Merit3d::VideoObjectData::Update(float) | libmerit3d.so
-Merit3d::VideoObjectData::Restart(int) | libmerit3d.so
-Merit3d::VideoObjectData::Shutdown() | libmerit3d.so
-Merit3d::VideoObjectData::VideoObjectData() | libmerit3d.so
-DBFClass::GetNumRecords() | stickerbook.so
-DBFClass::GetNumericData(int) | stickerbook.so
-DBFClass::OpenDBF(char const*) | stickerbook.so
-DBFClass::CloseDBF() | stickerbook.so
-DBFClass::GetRecord(int) | stickerbook.so
-DBFClass::DBFClass() | stickerbook.so
-DBFClass::~DBFClass() | stickerbook.so
-TextDesc::SetFontName(char const*) | libmerit3d.so
-DBGlobals::Instance() | stickerbook.so
-TextUtils::ConvertToMarkup(char const*) | libmerit3d.so
-MyMeritManager::PlayerLoaded() const | libmeritbasegame.so
-MyMeritManager::Name() const | libmeritbasegame.so
-typeinfo for ExtendedCrashInfo | libmeritbasegame.so
-__aglXGetProcAddressARB | libmerit3d.so
-allegro_gl_flip | libmerit3d.so
